@@ -1,0 +1,87 @@
+body{
+    background-color:hsl(30, 54%, 90%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.container{
+    border-radius: 20px;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    width: 80%;  
+    max-width: 500px;  
+    
+}
+
+h1{
+    color: black;
+}
+h3{
+    color: hsl(14, 45%, 36%);
+}
+h4{
+    color: hsl(332, 51%, 32%);
+}
+
+.img-title{    
+    border-radius: 10px;
+    width: 100%;
+    
+}
+
+div{
+    padding: 10px;
+}
+
+.preparation{
+    background-color:#ffeefb;
+    border-radius: 5px;
+    padding-top: 0px;
+    width: 93%;
+    align-self: center;
+}
+
+li{
+    color: black;
+    margin-bottom: 5px;
+
+}
+
+
+li::marker {
+    font-size: 8px; /* Adjust the size as needed */
+    padding-top: 0px;
+    color: rebeccapurple;
+}
+
+ol {
+    list-style: none; /* Remove default list style */
+    counter-reset: my-counter; /* Reset the counter */
+}
+
+ol li::before {
+    content: counter(my-counter)"."; /* Use a counter for the numbering */
+    counter-increment: my-counter; /* Increment the counter */
+    margin-right: 0.5em; /* Adjust spacing between number and content */
+    font-size: 15px; /* Adjust the size of the numbers */
+    color: hsl(14, 45%, 36%);
+    font-weight: bold;
+}
+
+.nutrition > div{
+    display: flex;
+    padding-top: 0;
+    padding-bottom: 0px;
+        
+}
+
+.quantidade{
+    position: absolute;
+    margin-left: 300px;
+    color: hsl(14, 45%, 36%);
+    font-weight: bold;
+}
+
+
